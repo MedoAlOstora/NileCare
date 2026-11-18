@@ -15,8 +15,6 @@
 <a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
 <a href="departments.html" data-en="Departments" data-ar="الأقسام">الأقسام</a>
 <a href="doctors.html" data-en="Doctors" data-ar="الأطباء">الأطباء</a>
-<a href="book.html" data-en="Book" data-ar="احجز">احجز</a>
-<a href="contact.html" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
 <a href="login.html" aria-current="page" data-en="Login" data-ar="تسجيل الدخول">تسجيل الدخول</a>
 </nav>
 <button id="lang" type="button">English</button>
@@ -24,19 +22,46 @@
 
 <main>
 <section id="login">
+<div class="auth">
+<div class="auth-side">
+<h2 data-en="Your health record, in one place" data-ar="ملفك الطبي في مكان واحد">ملفك الطبي في مكان واحد</h2>
+<ul>
+<li data-en="See and change your appointments" data-ar="شوف مواعيدك وعدّلها">شوف مواعيدك وعدّلها</li>
+<li data-en="Read lab and radiology results" data-ar="اقرا نتايج التحاليل والأشعة">اقرا نتايج التحاليل والأشعة</li>
+<li data-en="Keep your details up to date" data-ar="حدّث بياناتك">حدّث بياناتك</li>
+</ul>
+</div>
+<div class="auth-card">
 <h2 data-en="Patient login" data-ar="تسجيل دخول المريض">تسجيل دخول المريض</h2>
-<p data-en="Sign in to see your appointments and results." data-ar="سجّل دخولك علشان تشوف مواعيدك ونتايجك.">سجّل دخولك علشان تشوف مواعيدك ونتايجك.</p>
 <form id="loginForm" class="login" novalidate>
 <label for="u" data-en="Email or phone" data-ar="الإيميل أو رقم التليفون">الإيميل أو رقم التليفون</label>
 <input id="u" type="text" autocomplete="username" required>
 <label for="p" data-en="Password" data-ar="كلمة السر">كلمة السر</label>
 <input id="p" type="password" autocomplete="current-password" required>
+<label class="radio"><input type="checkbox" id="showPw"><span data-en="Show password" data-ar="إظهار كلمة السر">إظهار كلمة السر</span></label>
 <button class="btn" type="submit" data-en="Log in" data-ar="تسجيل الدخول">تسجيل الدخول</button>
 <p id="loginMsg" class="note" hidden data-en="Demo only: this page has no real accounts yet." data-ar="تجربة شكل بس: الصفحة دي مفيهاش حسابات حقيقية لسه.">تجربة شكل بس: الصفحة دي مفيهاش حسابات حقيقية لسه.</p>
+<p class="note"><a href="signup.html" data-en="New patient? Create an account" data-ar="مريض جديد؟ اعمل حساب">مريض جديد؟ اعمل حساب</a></p>
 </form>
+</div>
+</div>
 </section>
 </main>
-<footer data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</footer>
+<footer class="site-footer">
+<div class="fgrid">
+<div><h3 data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</h3>
+<p data-en="A hospital that keeps booking, records, labs, and pharmacy in one connected system." data-ar="مستشفى بتجمع الحجز والسجلات والمعمل والصيدلية في نظام واحد مترابط.">مستشفى بتجمع الحجز والسجلات والمعمل والصيدلية في نظام واحد مترابط.</p></div>
+<div><h3 data-en="Quick links" data-ar="روابط سريعة">روابط سريعة</h3>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a><a href="departments.html" data-en="Departments" data-ar="الأقسام">الأقسام</a><a href="doctors.html" data-en="Doctors" data-ar="الأطباء">الأطباء</a><a href="book.html" data-en="Book now" data-ar="احجز دلوقتي">احجز دلوقتي</a></div>
+<div><h3 data-en="Working hours" data-ar="مواعيد العمل">مواعيد العمل</h3>
+<p data-en="Clinics: 9 AM to 9 PM" data-ar="العيادات: 9 الصبح لـ 9 بالليل">العيادات: 9 الصبح لـ 9 بالليل</p>
+<p data-en="Emergency: 24 hours" data-ar="الطوارئ: 24 ساعة">الطوارئ: 24 ساعة</p></div>
+<div><h3 data-en="Contact" data-ar="تواصل معنا">تواصل معنا</h3>
+<p data-en="Kafr El-Sheikh, Egypt" data-ar="كفر الشيخ، مصر">كفر الشيخ، مصر</p>
+<p dir="ltr">047-000-0000</p><p dir="ltr">info@nilecare.example</p></div>
+</div>
+<div class="fbar"><span data-en="© 2026 NileCare Kafr El-Sheikh" data-ar="© 2026 نايل كير كفر الشيخ">© 2026 نايل كير كفر الشيخ</span></div>
+</footer>
 <script src="js/main.js"></script>
 <script src="js/login.js"></script>
 </body>

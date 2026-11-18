@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign up | NileCare Kafr El-Sheikh | نايل كير كفر الشيخ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="index.html" data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</a>
+<nav>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+<a href="departments.html" data-en="Departments" data-ar="الأقسام">الأقسام</a>
+<a href="doctors.html" data-en="Doctors" data-ar="الأطباء">الأطباء</a>
+<a href="login.html" aria-current="page" data-en="Login" data-ar="تسجيل الدخول">تسجيل الدخول</a>
+</nav>
+<button id="lang" type="button">English</button>
+</div></header>
+
+<main>
+<section id="signup">
+<div class="auth">
+<div class="auth-side">
+<h2 data-en="Create your NileCare account" data-ar="اعمل حسابك في نايل كير">اعمل حسابك في نايل كير</h2>
+<ul>
+<li data-en="Book and manage visits in one place" data-ar="احجز وعدّل زياراتك من مكان واحد">احجز وعدّل زياراتك من مكان واحد</li>
+<li data-en="Get your results online" data-ar="استلم نتايجك أونلاين">استلم نتايجك أونلاين</li>
+<li data-en="Keep one shared medical record" data-ar="سجل طبي واحد موحد">سجل طبي واحد موحد</li>
+</ul>
+</div>
+<div class="auth-card">
+<h2 data-en="Sign up" data-ar="إنشاء حساب">إنشاء حساب</h2>
+<form id="signupForm" class="bookform" novalidate>
+<label for="sname" data-en="Full name" data-ar="الاسم بالكامل">الاسم بالكامل</label>
+<input id="sname" type="text" autocomplete="name">
+<p class="err" id="snameErr" hidden data-en="Enter your full name (at least 3 characters)." data-ar="اكتب اسمك بالكامل (3 حروف على الأقل).">اكتب اسمك بالكامل (3 حروف على الأقل).</p>
+<label for="smobile" data-en="Mobile number" data-ar="رقم الموبايل">رقم الموبايل</label>
+<input id="smobile" type="tel" inputmode="numeric" dir="ltr" maxlength="11" autocomplete="tel" placeholder="01012345678">
+<p class="err" id="smobileErr" hidden data-en="Enter a valid Egyptian mobile number, like 01012345678." data-ar="اكتب رقم موبايل مصري صحيح، زي 01012345678.">اكتب رقم موبايل مصري صحيح، زي 01012345678.</p>
+<label for="spass" data-en="Password" data-ar="كلمة السر">كلمة السر</label>
+<input id="spass" type="password" autocomplete="new-password">
+<p class="err" id="spassErr" hidden data-en="Use at least 8 characters." data-ar="استخدم 8 حروف أو أرقام على الأقل.">استخدم 8 حروف أو أرقام على الأقل.</p>
+<label for="sconfirm" data-en="Confirm password" data-ar="تأكيد كلمة السر">تأكيد كلمة السر</label>
+<input id="sconfirm" type="password" autocomplete="new-password">
+<p class="err" id="sconfirmErr" hidden data-en="Passwords do not match." data-ar="كلمتين السر مش متطابقين.">كلمتين السر مش متطابقين.</p>
+<button class="btn" type="submit" data-en="Create account" data-ar="إنشاء الحساب">إنشاء الحساب</button>
+<p id="signupMsg" class="note" hidden data-en="Demo only: no account was created." data-ar="تجربة شكل بس: محصلش إنشاء حساب فعلي.">تجربة شكل بس: محصلش إنشاء حساب فعلي.</p>
+<p class="note"><a href="login.html" data-en="Already have an account? Log in" data-ar="عندك حساب؟ سجّل دخول">عندك حساب؟ سجّل دخول</a></p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="fgrid">
+<div><h3 data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</h3>
+<p data-en="A hospital that keeps booking, records, labs, and pharmacy in one connected system." data-ar="مستشفى بتجمع الحجز والسجلات والمعمل والصيدلية في نظام واحد مترابط.">مستشفى بتجمع الحجز والسجلات والمعمل والصيدلية في نظام واحد مترابط.</p></div>
+<div><h3 data-en="Quick links" data-ar="روابط سريعة">روابط سريعة</h3>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a><a href="departments.html" data-en="Departments" data-ar="الأقسام">الأقسام</a><a href="doctors.html" data-en="Doctors" data-ar="الأطباء">الأطباء</a><a href="book.html" data-en="Book now" data-ar="احجز دلوقتي">احجز دلوقتي</a></div>
+<div><h3 data-en="Working hours" data-ar="مواعيد العمل">مواعيد العمل</h3>
+<p data-en="Clinics: 9 AM to 9 PM" data-ar="العيادات: 9 الصبح لـ 9 بالليل">العيادات: 9 الصبح لـ 9 بالليل</p>
+<p data-en="Emergency: 24 hours" data-ar="الطوارئ: 24 ساعة">الطوارئ: 24 ساعة</p></div>
+<div><h3 data-en="Contact" data-ar="تواصل معنا">تواصل معنا</h3>
+<p data-en="Kafr El-Sheikh, Egypt" data-ar="كفر الشيخ، مصر">كفر الشيخ، مصر</p>
+<p dir="ltr">047-000-0000</p><p dir="ltr">info@nilecare.example</p></div>
+</div>
+<div class="fbar"><span data-en="© 2026 NileCare Kafr El-Sheikh" data-ar="© 2026 نايل كير كفر الشيخ">© 2026 نايل كير كفر الشيخ</span></div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/signup.js"></script>
+</body>
+</html>
