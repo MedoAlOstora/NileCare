@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book | NileCare Kafr El-Sheikh | نايل كير كفر الشيخ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="index.html" data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</a>
+<nav>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+<a href="departments.html" data-en="Departments" data-ar="الأقسام">الأقسام</a>
+<a href="doctors.html" data-en="Doctors" data-ar="الأطباء">الأطباء</a>
+<a href="book.html" aria-current="page" data-en="Book" data-ar="احجز">احجز</a>
+<a href="contact.html" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+<a href="login.html" data-en="Login" data-ar="تسجيل الدخول">تسجيل الدخول</a>
+</nav>
+<button id="lang" type="button">English</button>
+</div></header>
+
+<main>
+<section id="book">
+<h2 data-en="Book an appointment" data-ar="احجز موعدك">احجز موعدك</h2>
+<p data-en="Fill in the form. The reception team confirms by phone." data-ar="املا الفورم، والاستقبال هيأكدلك بالتليفون.">املا الفورم، والاستقبال هيأكدلك بالتليفون.</p>
+<form id="bookForm" class="bookform" novalidate>
+<label for="bName" data-en="Full name" data-ar="الاسم بالكامل">الاسم بالكامل</label>
+<input id="bName" name="name" type="text" autocomplete="name" required minlength="3">
+<p id="nameErr" class="err" hidden data-en="Enter your full name (at least 3 characters)." data-ar="اكتب اسمك بالكامل (3 حروف على الأقل).">اكتب اسمك بالكامل (3 حروف على الأقل).</p>
+
+<label for="bMobile" data-en="Mobile number" data-ar="رقم الموبايل">رقم الموبايل</label>
+<input id="bMobile" name="mobile" type="tel" inputmode="numeric" dir="ltr" autocomplete="tel" maxlength="11" required placeholder="01012345678">
+<p id="mobileErr" class="err" hidden data-en="Enter a valid Egyptian mobile number, like 01012345678." data-ar="اكتب رقم موبايل مصري صحيح، زي 01012345678.">اكتب رقم موبايل مصري صحيح، زي 01012345678.</p>
+
+<label for="bDept" data-en="Department" data-ar="القسم">القسم</label>
+<select id="bDept" name="department" required>
+<option value="" disabled selected data-en="Choose a department" data-ar="اختار القسم">اختار القسم</option>
+<option value="Internal medicine" data-en="Internal medicine" data-ar="الباطنة">الباطنة</option>
+<option value="Pediatrics" data-en="Pediatrics" data-ar="طب الأطفال">طب الأطفال</option>
+<option value="Cardiology" data-en="Cardiology" data-ar="أمراض القلب">أمراض القلب</option>
+<option value="Radiology" data-en="Radiology" data-ar="الأشعة">الأشعة</option>
+<option value="Laboratory" data-en="Laboratory" data-ar="المعمل">المعمل</option>
+</select>
+<p id="departmentErr" class="err" hidden data-en="Choose a department." data-ar="اختار القسم.">اختار القسم.</p>
+
+<label for="bDate" data-en="Preferred date" data-ar="التاريخ المفضل">التاريخ المفضل</label>
+<input id="bDate" name="date" type="date" required>
+<p id="dateErr" class="err" hidden data-en="Choose today or a future date." data-ar="اختار النهاردة أو تاريخ جاي.">اختار النهاردة أو تاريخ جاي.</p>
+
+<fieldset>
+<legend data-en="How did you hear about us?" data-ar="سمعت عننا منين؟">سمعت عننا منين؟</legend>
+<label class="radio"><input type="radio" name="source" value="Facebook"><span data-en="Facebook" data-ar="فيسبوك">فيسبوك</span></label>
+<label class="radio"><input type="radio" name="source" value="Friend or family"><span data-en="Friend or family" data-ar="صديق أو قريب">صديق أو قريب</span></label>
+<label class="radio"><input type="radio" name="source" value="Google search"><span data-en="Google search" data-ar="بحث جوجل">بحث جوجل</span></label>
+<label class="radio"><input type="radio" name="source" value="Other"><span data-en="Other" data-ar="أخرى">أخرى</span></label>
+</fieldset>
+<p id="sourceErr" class="err" hidden data-en="Choose one option." data-ar="اختار اختيار واحد.">اختار اختيار واحد.</p>
+
+<button id="bookBtn" class="btn" type="submit" data-en="Book now" data-ar="احجز دلوقتي">احجز دلوقتي</button>
+<p id="bookStatus" class="note" role="status" hidden></p>
+</form>
+</section>
+</main>
+<footer data-en="NileCare Kafr El-Sheikh" data-ar="نايل كير كفر الشيخ">نايل كير كفر الشيخ</footer>
+<script src="js/main.js"></script>
+<script src="js/config.js"></script>
+<script src="js/book.js"></script>
+</body>
+</html>
